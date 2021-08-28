@@ -33,7 +33,6 @@ class Container extends React.Component {
         }
         const handleClickGroceryItem = (event) => {
             const clickedItem = event.target.getAttribute("value")
-            console.log("geklikt op item: ", clickedItem)
             const currentShoppingList = this.state.shoppingListItems
             const shoppingListItem = currentShoppingList.filter(
                 item => item.title === clickedItem
@@ -48,9 +47,9 @@ class Container extends React.Component {
             this.setState({ groceryItems: this.state.groceryItems.concat(item) })
         }
         return (
-            <div className="lijsten">
+            <div className="List">
                 <GroceryList products={this.state.groceryItems} handleClickGroceryItem={handleClickGroceryItem} addGrocery={addGrocery} />
-                <ShoppingCart products={this.state.shoppingListItems} handleClickEmptyBasket={emptyCart} />
+                <ShoppingCart products={this.state.shoppingListItems} handleClickEmptyBasket={emptyCart} addAmount={addAmountToItem} />
             </div>
         )      
     }
