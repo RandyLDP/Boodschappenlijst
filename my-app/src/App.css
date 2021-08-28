@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px;
+}
+
+h2 {
+  color: #282c34;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  font: 30px, bold;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input {
+  background-color: whitesmoke;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+
+.lijsten {
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);    
+}
+
+.Shoppinglist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Shoppinglist ul {
+  font-family: 'Roboto', sans-serif;;
+  font-size: 25px;
+  list-style-type: none;
+  width: 80%;
+  background-color: #61dafb;
+  padding: 5px;
+  margin: 25px;
+  border-radius: 5px;
+}
+
+.Shoppinglist ul li {
+  padding: 10px 40px;    
+  margin: 2px;
+  border-radius: 5px;
+  background-color: #edf5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.Shoppinglist ul li span:nth-child(1) {
+  cursor: pointer;
+}
+
+.Cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Cart ul {
+  font-size: 25px;
+  list-style-type: none;
+  width: 80%;
+  background-color: #61dafb;
+  padding: 5px;
+  margin: 25px;
+  border-radius: 5px;
+}
+
+.Cart ul li {
+  padding: 10px 40px;    
+  margin: 2px;
+  border-radius: 5px;
+  background-color: #edf5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Cart ul li:nth-child(even) {
+  background-color: #ade9eb;
+}
